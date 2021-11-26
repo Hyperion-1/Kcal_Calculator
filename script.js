@@ -4,6 +4,7 @@
 *
 */
 
+//also, look into breakpoints to replace 'console.log()'
 
 function mensCal(){
 
@@ -18,5 +19,20 @@ function mensCal(){
     return base
 }
 
+function womenCal(){
+
+    //stand in
+    let weight = 40.12  //kilograms
+    let height = 142    //cm
+    let age = 26        //years
+
+
+    let base = 10 * weight + 6.25 * height - 5 * age - 161
+
+    console.log('Your daily base load is '+ base + ' Kcal')
+    return base
+}
+
 mensCal()
+womenCal()
 
