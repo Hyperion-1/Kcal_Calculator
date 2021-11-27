@@ -8,43 +8,50 @@
     <script src='script.js'></script>
     <title>Kcal Calculator</title>
 </head>
+
+
+
 <body>
     <!--Top banner-->
     <h1 id='banner'>The Kcal Calculator</h1>
     <hr>
 
     <div class='flexContainer'>
-        <form method='post'>
+        <form id='form1' method='post' action="">
         
         <!--Gender input (radio)-->
-        <div>
-            <label><b>Gender: </b></label>
-            Male<input type='radio' name='gender' id='maleButton'>
-            Female<input type='radio' name='gender' id='femaleButton'>
+        <div class='formBox'>
+            <label><b><u>Gender: </b></u></label>
+            Male<input type='radio' name='gender' value='male' id='maleButton'>
+            Female<input type='radio' name='gender' value='female' id='femaleButton'>
         </div>
 
         <!--weight/height/age input fields-->
-        <div><input type="number" placeholder="weight (Kg)" min='22'required></div>
-        <div><input type="number" placeholder="height (cm)" min='1' required></div>
-        <div><input type="number" placeholder="age" min='18' required></div>
+        <div class='formBox'><input type="number" placeholder="weight (Kg)" min='22'required></div>
+        <div class='formBox'><input type="number" placeholder="height (cm)" min='1' required></div>
+        <div class='formBox'><input type="number" placeholder="age" min='18' required></div>
 
-        <!--Activity index-->
-        <label><b>Activity factor:</b></label>
+        <br>
+
+        <!--Activity index [temp removed until baseload is functional]
+        <label><b><u>Activity factor:</u></b></label>
         <select>
           <option value="1">1</option>  
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
+         -->
+
 
         <!--submit/reset buttons-->
         <div>
-            <input type='reset' value='Reset'>
-            <input type='submit' value='Submit'>
+            <input type='reset' value='Reset' id="reset">
+            <input type='submit' value='Submit' id="submit">
         </div>
 
         </form>        
-    </div>  
+    </div> <!--end of flexContainer-->
 
 </body>
 </html>
