@@ -27,9 +27,9 @@
         </div>
 
         <!--weight/height/age input fields-->
-        <div class='formBox'><input type="number" placeholder="weight (Kg)" min='22'required></div>
-        <div class='formBox'><input type="number" placeholder="height (cm)" min='1' required></div>
-        <div class='formBox'><input type="number" placeholder="age" min='18' required></div>
+        <div class='formBox'><input type="number" placeholder="weight (Kg)" min='22' id='weight' required></div>
+        <div class='formBox'><input type="number" placeholder="height (cm)" min='1' id='height'required></div>
+        <div class='formBox'><input type="number" placeholder="age" min='18' id='age' required></div>
 
         <br>
 
@@ -50,8 +50,18 @@
             <input type='submit' value='Submit' id="submit">
         </div>
 
+
+        <!--TEST ELEMENTs DELETE BEFORE FINAL COMMIT-->
+        <button onclick="test()">run test</button>
+        <p id='test'> </p>
+
+
         </form>        
     </div> <!--end of flexContainer-->
+
+    <footer>
+       &copy;ay lamo
+    </footer>
 
 </body>
 </html>

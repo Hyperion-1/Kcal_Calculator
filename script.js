@@ -9,7 +9,14 @@
 */
 
 
+function test(){
+    let weight = document.getElementById('weight').value;
+    let height = document.getElementById('height').value;
+    let age = document.getElementById('age').value;
 
+    let result = weight + ' '/n + height + ' '/n + age;
+    document.getElementById('test').textContent = result;
+}
 
 
 
