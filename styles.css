@@ -12,15 +12,18 @@ body{
 
     text-align: center;
 }
+ 
 
 .flexContainer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     text-align: center;
     
 
 }
+
 
 footer{
     text-align: center;

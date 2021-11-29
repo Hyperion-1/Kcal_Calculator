@@ -12,12 +12,13 @@
 
 
 <body>
+
     <!--Top banner-->
     <h1 id='banner'>The Kcal Calculator</h1>
     <hr>
 
     <div class='flexContainer'>
-        <form id='form1' method='post' action="">
+        <form id='form1' method='get' action="results.html">
         
         <!--Gender input (radio)-->
         <div class='formBox' id='genderSelect'>
@@ -25,12 +26,24 @@
             Male<input type='radio' name='gender' value='male' id='maleButton'>
             Female<input type='radio' name='gender' value='female' id='femaleButton'>
         </div>
+        <br>
 
-        <!--weight/height/age input fields-->
-        <div class='formBox'><input type="number" placeholder="weight (Kg)" min='22' id='weight' required></div>
-        <div class='formBox'><input type="number" placeholder="height (cm)" min='1' id='height'required></div>
-        <div class='formBox'><input type="number" placeholder="age" min='18' id='age' required></div>
+        <!--weight/height/age input fields-->        
+        <div class='formBox'>
+            <label>Weight</label>
+            <input type="number" placeholder="(Kg)" min='22' id='weight' required>
+        </div>
+        
+        <div class='formBox'>
+            <label>Height</label>
+            <input type="number" placeholder="(cm)" min='1' id='height'required>
+        </div>
 
+        
+        <div class='formBox'>
+            <label>Age</label>
+            <input type="number" placeholder="(min 18)" min='18' id='age' required>
+        </div>
         <br>
 
         <!--Activity index [temp removed until baseload is functional]
@@ -50,10 +63,6 @@
             <input type='submit' value='Submit' id="submit">
         </div>
 
-
-        <!--TEST ELEMENTs DELETE BEFORE FINAL COMMIT-->
-        <button onclick="test()">run test</button>
-        <p id='test'> </p>
 
 
         </form>        
