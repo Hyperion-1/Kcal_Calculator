@@ -21,27 +21,27 @@
         <form id='form1' method='get' action="results.html">
         
         <!--Gender input (radio)-->
-        <div class='formBox' id='genderSelect'>
-            <label><b><u>Gender: </b></u></label>
+        <div class='flexbox-item flexbox-item1' id='genderSelect'>
+            <label><b><u>Gender</u></b><br></label>
             Male<input type='radio' name='gender' value='male' id='maleButton'>
             Female<input type='radio' name='gender' value='female' id='femaleButton'>
         </div>
         <br>
 
         <!--weight/height/age input fields-->        
-        <div class='formBox'>
-            <label>Weight</label>
+        <div class='flexbox-item flexbox-item2'>
+            <label><b>Weight</b></label>
             <input type="number" placeholder="(Kg)" min='22' id='weight' required>
         </div>
         
-        <div class='formBox'>
-            <label>Height</label>
+        <div class='flexbox-item flexbox-item3'>
+            <label><b>Height</b></label>
             <input type="number" placeholder="(cm)" min='1' id='height'required>
         </div>
 
         
-        <div class='formBox'>
-            <label>Age</label>
+        <div class='flexbox-item flexbox-item4'>
+            <label><b>Age</b></label>
             <input type="number" placeholder="(min 18)" min='18' id='age' required>
         </div>
         <br>
