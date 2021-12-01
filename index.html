@@ -18,11 +18,11 @@
     <hr>
 
     <div class='flexContainer'>
-        <form id='form1' method='get' action="results.html">
+        <form id='form1' action="results.html" method='get' target="_self">
         
         <!--Gender input (radio)-->
         <div class='flexbox-item flexbox-item1' id='genderSelect'>
-            <label><b><u>Gender</u></b><br></label>
+            <label for='gender'><b><u>Gender</u></b><br></label>
             Male<input type='radio' name='gender' value='male' id='maleButton'>
             Female<input type='radio' name='gender' value='female' id='femaleButton'>
         </div>
@@ -30,18 +30,18 @@
 
         <!--weight/height/age input fields-->        
         <div class='flexbox-item flexbox-item2'>
-            <label><b>Weight</b></label>
+            <label for='weight'><b>Weight</b></label>
             <input type="number" placeholder="(Kg)" min='22' id='weight' required>
         </div>
         
         <div class='flexbox-item flexbox-item3'>
-            <label><b>Height</b></label>
+            <label for='height'><b>Height</b></label>
             <input type="number" placeholder="(cm)" min='1' id='height'required>
         </div>
 
         
         <div class='flexbox-item flexbox-item4'>
-            <label><b>Age</b></label>
+            <label for='age'><b>Age</b></label>
             <input type="number" placeholder="(min 18)" min='18' id='age' required>
         </div>
         <br>
