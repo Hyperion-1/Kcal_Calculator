@@ -8,7 +8,7 @@
 *
 */
 
-//test
+//test2
 
 function test(){
     let weight = document.getElementById('weight').value;
