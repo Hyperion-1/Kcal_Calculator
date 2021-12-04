@@ -31,18 +31,18 @@
         <!--weight/height/age input fields-->        
         <div class='flexbox-item flexbox-item2'>
             <label for='weight'><b>Weight</b></label>
-            <input type="number" placeholder="(Kg)" min='22' id='weight' required>
+            <input data-weight type="number" placeholder="(Kg)" min='22' id='weight' required>
         </div>
         
         <div class='flexbox-item flexbox-item3'>
             <label for='height'><b>Height</b></label>
-            <input type="number" placeholder="(cm)" min='1' id='height'required>
+            <input data-height type="number" placeholder="(cm)" min='1' id='height'required>
         </div>
 
         
         <div class='flexbox-item flexbox-item4'>
             <label for='age'><b>Age</b></label>
-            <input type="number" placeholder="(min 18)" min='18' id='age' required>
+            <input data-age type="number" placeholder="(min 18)" min='18' id='age' required>
         </div>
         <br>
 
@@ -57,12 +57,15 @@
          -->
 
 
-        <!--submit/reset buttons-->
+        <!--submit/reset buttons
         <div>
             <input type='reset' value='Reset' id="reset">
             <input type='submit' value='Submit' id="submit">
         </div>
-
+        -->
+        <div class='flexbox-item flexbox-item5'>
+            <div data-display class='display'>test</div>
+        </div>
 
 
         </form>        

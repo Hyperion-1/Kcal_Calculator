@@ -8,67 +8,53 @@
 *
 */
 
-//test2
-let test = 0;
 
-function test(){
-    let weight = document.getElementById('weight').value;
-    let height = document.getElementById('height').value;
-    let age = document.getElementById('age').value;
+class calculator{
+    constructor(display){
+        this.display = display;
+    }//end constructor
 
-    let result = weight + ' '/n + height + ' '/n + age;
-    document.getElementById('test').textContent = result;
-}
+    mensCal(){
 
+        //using my own stats for build, in metric
+        let weight = 81.64  //kilograms
+        let height = 189    //cm
+        let age = 26        //years
+    
+        let base = 10 * weight + 6.25 * height - 5 * age + 5
+    
+        console.log('Your daily base load is '+ base + ' Kcal')
+        return base
+    }//end mensCal()
 
+     womenCal(){
 
+        //stand in, using psudo-average US female data via CDC, converted to metric
+        let weight = 61.23       //kilograms
+        let height = 164.5       //cm
+        let age = 20             //years
+    
+    
+        let base = 10 * weight + 6.25 * height - 5 * age - 161
+    
+        console.log('Your daily base load is '+ base + ' Kcal')
+        return base
+    }//end woemnCal
 
-function mensCal(){
-
-    //using my own stats for build, in metric
-    let weight = 81.64  //kilograms
-    let height = 189    //cm
-    let age = 26        //years
-
-    let base = 10 * weight + 6.25 * height - 5 * age + 5
-
-    console.log('Your daily base load is '+ base + ' Kcal')
-    return base
-}
-
-function womenCal(){
-
-    //stand in, using psudo-average US female data via CDC, converted to metric
-    let weight = 61.23       //kilograms
-    let height = 164.5       //cm
-    let age = 20             //years
-
-
-    let base = 10 * weight + 6.25 * height - 5 * age - 161
-
-    console.log('Your daily base load is '+ base + ' Kcal')
-    return base
-}
-
-/*
-const submit = document.querySelectorAll('#submit');
-submit.onclick = function gender(){
-
-let male = document.getElementById('#maleButton');
-let female = document.getElementById('#femaleButton');
-
-    if(male.checked==true){
-      console.log(mensCal());
-     // alert('male selected');
-
-    } else if(female.checked==true){
-        womenCal();
-       //alert('female selected');
-
-    } else{
-        alert('please select a gender');
-    }
+}//end class calculator
 
 
-    }//end gender()
-*/
+
+
+const weight = document.querySelectorAll('[data-weight]')
+const height = document.querySelectorAll('[data-height]')
+const age = document.querySelectorAll('[data-age]')
+const display = document.querySelectorAll('[data-display]')
+
+
+
+
+
+
+
+//console.log(mensCal());
