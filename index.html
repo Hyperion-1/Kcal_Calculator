@@ -12,25 +12,38 @@
 
 
 <body>
+
     <!--Top banner-->
     <h1 id='banner'>The Kcal Calculator</h1>
     <hr>
 
     <div class='flexContainer'>
-        <form id='form1' method='post' action="">
+        <form id='form1' action="results.html" method='get' target="_self">
         
         <!--Gender input (radio)-->
-        <div class='formBox' id='genderSelect'>
-            <label><b><u>Gender: </b></u></label>
+        <div class='flexbox-item flexbox-item1' id='genderSelect'>
+            <label for='gender'><b><u>Gender</u></b><br></label>
             Male<input type='radio' name='gender' value='male' id='maleButton'>
             Female<input type='radio' name='gender' value='female' id='femaleButton'>
         </div>
+        <br>
 
-        <!--weight/height/age input fields-->
-        <div class='formBox'><input type="number" placeholder="weight (Kg)" min='22' id='weight' required></div>
-        <div class='formBox'><input type="number" placeholder="height (cm)" min='1' id='height'required></div>
-        <div class='formBox'><input type="number" placeholder="age" min='18' id='age' required></div>
+        <!--weight/height/age input fields-->        
+        <div class='flexbox-item flexbox-item2'>
+            <label for='weight'><b>Weight</b></label>
+            <input data-weight type="number" placeholder="(Kg)" min='22' id='weight' required>
+        </div>
+        
+        <div class='flexbox-item flexbox-item3'>
+            <label for='height'><b>Height</b></label>
+            <input data-height type="number" placeholder="(cm)" min='1' id='height'required>
+        </div>
 
+        
+        <div class='flexbox-item flexbox-item4'>
+            <label for='age'><b>Age</b></label>
+            <input data-age type="number" placeholder="(min 18)" min='18' id='age' required>
+        </div>
         <br>
 
         <!--Activity index [temp removed until baseload is functional]
@@ -44,16 +57,15 @@
          -->
 
 
-        <!--submit/reset buttons-->
+        <!--submit/reset buttons
         <div>
             <input type='reset' value='Reset' id="reset">
             <input type='submit' value='Submit' id="submit">
         </div>
-
-
-        <!--TEST ELEMENTs DELETE BEFORE FINAL COMMIT-->
-        <button onclick="test()">run test</button>
-        <p id='test'> </p>
+        -->
+        <div class='flexbox-item flexbox-item5'>
+            <div data-display class='display'>test</div>
+        </div>
 
 
         </form>        
