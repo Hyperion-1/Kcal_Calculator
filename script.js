@@ -8,18 +8,28 @@
 *
 */
 
+//const weight = document.querySelectorAll('[data-weight]')
+//const height = document.querySelectorAll('[data-height]')
+//const age = document.querySelectorAll('[data-age]')
 
-class calculator{
-    constructor(display){
-        this.display = display;
-    }//end constructor
+var weight = document.getElementById("weight");
+var height = document.getElementById("height");
+var age = document.getElementById("age");
 
-    mensCal(){
+var display = document.getElementById("display");
+
+
+document.getElementById('run').addEventListener("click", function(){
+    display.value = 10 * weight.value + 6.25 * height.value - 5 * age.value + 5;
+});
+
+
+function mensCal(){
 
         //using my own stats for build, in metric
-        let weight = 81.64  //kilograms
-        let height = 189    //cm
-        let age = 26        //years
+     //   let weight = 81.64  //kilograms
+     //   let height = 189    //cm
+   //    let age = 26        //years
     
         let base = 10 * weight + 6.25 * height - 5 * age + 5
     
@@ -27,7 +37,7 @@ class calculator{
         return base
     }//end mensCal()
 
-     womenCal(){
+function womenCal(){
 
         //stand in, using psudo-average US female data via CDC, converted to metric
         let weight = 61.23       //kilograms
@@ -41,15 +51,9 @@ class calculator{
         return base
     }//end woemnCal
 
-}//end class calculator
 
 
 
-
-const weight = document.querySelectorAll('[data-weight]')
-const height = document.querySelectorAll('[data-height]')
-const age = document.querySelectorAll('[data-age]')
-const display = document.querySelectorAll('[data-display]')
 
 
 
