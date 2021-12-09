@@ -40,6 +40,14 @@ body{
 
 }
 
+div input[type=number]:read-only{
+    border: 1px solid #000;
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    
+
+}
 
 footer{
     text-align: center;
