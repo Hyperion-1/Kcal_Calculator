@@ -1,64 +1,52 @@
 /*   script.js
 *
-*
-*
 *   Formula's:              
 *  Men - 10 x weight (kg) + 6.25 x height (cm) – 5 x age (y) + 5
 *  Women - 10 x weight (kg) + 6.25 x height (cm) – 5 x age (y) – 161   
 *
 */
 
-//const weight = document.querySelectorAll('[data-weight]')
-//const height = document.querySelectorAll('[data-height]')
-//const age = document.querySelectorAll('[data-age]')
-
+//The five input variables
+var gender = document.getElementById("genderSelect")
 var weight = document.getElementById("weight");
 var height = document.getElementById("height");
 var age = document.getElementById("age");
+var activity = document.getElementById("activityFactor");
 
+//display 
 var display = document.getElementById("display");
 
+//end value for user
+var base = 0;
 
+
+
+//enables and updates the display
+//TODO: seperate male/female calculation
 document.getElementById('run').addEventListener("click", function(){
     display.value = 10 * weight.value + 6.25 * height.value - 5 * age.value + 5;
 });
 
+//Clear button
+document.getElementById('clear').addEventListener("click", function(){
+ //   gender.value = null; not functional
+    weight.value = null;
+    height.value = null;
+    age.value = null;
 
-function mensCal(){
+    display.value = null;
+});
 
-        //using my own stats for build, in metric
-     //   let weight = 81.64  //kilograms
-     //   let height = 189    //cm
-   //    let age = 26        //years
-    
-        let base = 10 * weight + 6.25 * height - 5 * age + 5
-    
-        console.log('Your daily base load is '+ base + ' Kcal')
-        return base
+
+
+function mensCal(){        
+     base = 10 * weight + 6.25 * height - 5 * age + 5
+     return base
     }//end mensCal()
 
-function womenCal(){
+function womenCal(){    
+     base = 10 * weight + 6.25 * height - 5 * age - 161    
+     return base
+    }//end womenCal
 
-        //stand in, using psudo-average US female data via CDC, converted to metric
-        let weight = 61.23       //kilograms
-        let height = 164.5       //cm
-        let age = 20             //years
-    
-    
-        let base = 10 * weight + 6.25 * height - 5 * age - 161
-    
-        console.log('Your daily base load is '+ base + ' Kcal')
-        return base
-    }//end woemnCal
-
-
-
-
-
-
-
-
-
-
-
-//console.log(mensCal());
+ console.log("( ͡° ͜ʖ ͡°) ay")

@@ -18,7 +18,7 @@
     <hr>
 
     <div class='flexContainer'>
-        
+      
         <!--Gender input (radio)-->
         <div class='flexbox-item flexbox-item1' id='genderSelect'>
             <label for='gender'><b><u>Gender</u></b><br></label>
@@ -30,44 +30,45 @@
         <!--weight/height/age input fields-->        
         <div class='flexbox-item flexbox-item2'>
             <label for='weight'><b>Weight</b></label>
-            <input data-weight type="number" placeholder="(Kg)" min='22' id='weight' required>
+            <input type="number"  placeholder="(EX: 85 Kg)" min='22' id='weight' required>
         </div>
         
         <div class='flexbox-item flexbox-item3'>
             <label for='height'><b>Height</b></label>
-            <input data-height type="number" placeholder="(cm)" min='1' id='height'required>
+            <input type="number" placeholder="(EX: 200 cm)" min='1' id='height'required>
         </div>
-
         
         <div class='flexbox-item flexbox-item4'>
             <label for='age'><b>Age</b></label>
-            <input data-age type="number" placeholder="(min 18)" min='18' id='age' required>
+            <input type="number" placeholder="(min 18)" min='18' id='age' required>
         </div>
-        <br>
-
-        <!--Activity index [temp removed until baseload is functional]
-        <label><b><u>Activity factor:</u></b></label>
-        <select>
-          <option value="1">1</option>  
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-         -->
+        <br>        
 
 
         <!--submit/reset buttons -->
         <div>
+            <button id="clear">Clear</button>
             <button id="run">click</button>
         </div>
+
         
-        <div class='flexbox-item flexbox-item5'>
-          <!--  <div data-display class='display'>test</div>-->
-          <input type="number" readonly id="display" />
+        <!--display-->
+        <div class='flexbox-item flexbox-item6'>
+          <input type="number" readonly placeholder="Base Kcal" id="display" />
         </div>
 
+        <!--Activity index-->
+        <div  class='flexbox-item flexbox-item5'>
+            <label><b><u>Activity factor:</u></b></label>
+            <select id="activityFactor">
+              <option value="1">1</option>  
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            </div>
 
-              
+               
     </div> <!--end of flexContainer-->
 
     <footer>
