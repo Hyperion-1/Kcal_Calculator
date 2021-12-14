@@ -7,7 +7,7 @@
 body{
     height: 800px;
     background-color: rgb(81, 81, 81); /* For browsers that do not support gradients */
-    background-image: linear-gradient(rgb(98, 15, 137), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(158, 64, 201), rgb(0, 0, 0));
 }
 
 #banner{
@@ -43,6 +43,37 @@ body{
 .flexbox-item5{
     padding-top: 7px;
 }
+
+
+
+
+/*clear button effects*/
+#clear{
+    border: 2px solid red;
+}
+#clear:hover{
+    background-color: transparent;
+    -webkit-box-shadow: 10px 10px 99px 6px
+    red;
+    -moz-box-shadow: 10px 10px 99px 6px
+    red;
+    box-shadow: 10px 10px 99px 6px red;
+}
+
+/*run button effects*/
+#run{
+    border: 2px solid green;
+}
+#run:hover{
+    background-color: transparent;
+    -webkit-box-shadow: 10px 10px 99px 6px
+    green;
+    -moz-box-shadow: 10px 10px 99px 6px
+    green;
+    box-shadow: 10px 10px 99px 6px green;
+}
+
+
 
 /*This enables the display*/
 div input[type=number]:read-only{

@@ -21,8 +21,8 @@
       
         <!--Gender input (radio)-->
         <div class='flexbox-item flexbox-item1' id='genderSelect'>
-            <label for='gender'><b><u>Gender</u></b><br></label>
-            Male<input type='radio' name='gender' value='male' id='maleButton'>
+            <label for='gender'><b><u>Gender (sex)</u></b><br></label>
+            Male<input type='radio' name='gender' value='male' id='maleButton' checked>
             Female<input type='radio' name='gender' value='female' id='femaleButton'>
         </div>
         <br>
@@ -46,9 +46,9 @@
 
 
         <!--submit/reset buttons -->
-        <div>
+        <div class="subButtonEffects">
             <button id="clear">Clear</button>
-            <button id="run">click</button>
+            <button id="run">Calculate</button>
         </div>
 
         
@@ -60,12 +60,12 @@
         <!--Activity index-->
         <div  class='flexbox-item flexbox-item5'>
             <label><b><u>Activity factor:</u></b></label>
-            <select id="activityFactor">
-              <option value="1">1</option>  
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
+            <br>            
+             <button class="activityFactor">1</button>
+             <button class="activityFactor">2</button>
+             <button class="activityFactor">3</button>
+             <button class="activityFactor">4</button>
+            
             </div>
 
                
