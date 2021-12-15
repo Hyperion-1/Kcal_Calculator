@@ -55,8 +55,6 @@ body{
     background-color: transparent;
     -webkit-box-shadow: 10px 10px 99px 6px
     red;
-    -moz-box-shadow: 10px 10px 99px 6px
-    red;
     box-shadow: 10px 10px 99px 6px red;
 }
 
@@ -67,8 +65,6 @@ body{
 #run:hover{
     background-color: transparent;
     -webkit-box-shadow: 10px 10px 99px 6px
-    green;
-    -moz-box-shadow: 10px 10px 99px 6px
     green;
     box-shadow: 10px 10px 99px 6px green;
 }
