@@ -18,61 +18,67 @@
     <hr>
 
     <div class='flexContainer'>
-        
+      
         <!--Gender input (radio)-->
         <div class='flexbox-item flexbox-item1' id='genderSelect'>
-            <label for='gender'><b><u>Gender</u></b><br></label>
-            Male<input type='radio' name='gender' value='male' id='maleButton'>
+            <label for='gender'><b><u>Gender (sex)</u></b><br></label>
+            Male<input type='radio' name='gender' value='male' id='maleButton' checked>
             Female<input type='radio' name='gender' value='female' id='femaleButton'>
         </div>
         <br>
 
-        <!--weight/height/age input fields-->        
-        <div class='flexbox-item flexbox-item2'>
-            <label for='weight'><b>Weight</b></label>
-            <input data-weight type="number" placeholder="(Kg)" min='22' id='weight' required>
-        </div>
-        
-        <div class='flexbox-item flexbox-item3'>
-            <label for='height'><b>Height</b></label>
-            <input data-height type="number" placeholder="(cm)" min='1' id='height'required>
-        </div>
+        <!--weight/height/age input fields-->  
 
-        
+        <!--weight-->      
+        <div class='flexbox-item flexbox-item2'>
+            <label for='weight'><b>Weight (Kg)</b></label>
+            <input type="number"  placeholder="(EX: 85 Kg)" min='22' id='weight' required>
+        </div>
+        <!--height-->
+        <div class='flexbox-item flexbox-item3'>
+            <label for='height'><b>Height (cm)</b></label>
+            <input type="number" placeholder="(EX: 200 cm)" min='1' id='height'required>
+        </div>
+        <!--age-->
         <div class='flexbox-item flexbox-item4'>
             <label for='age'><b>Age</b></label>
-            <input data-age type="number" placeholder="(min 18)" min='18' id='age' required>
+            <input type="number" placeholder="(min 18)" min='18' id='age' required>
         </div>
-        <br>
-
-        <!--Activity index [temp removed until baseload is functional]
-        <label><b><u>Activity factor:</u></b></label>
-        <select>
-          <option value="1">1</option>  
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-         -->
-
-
-        <!--submit/reset buttons -->
-        <div>
-            <button id="run">click</button>
-        </div>
+        <br>  
         
-        <div class='flexbox-item flexbox-item5'>
-          <!--  <div data-display class='display'>test</div>-->
-          <input type="number" readonly id="display" />
+        <!--submit/reset buttons -->
+        <div class="subButtonEffects">
+            <button id="clear">Clear</button>
+            <button id="run">Calculate</button>
         </div>
 
+        
+        <!--display-->
+        <div class='flexbox-item flexbox-item6'>
+          <input type="number" readonly placeholder="Base Kcal" id="display" />
+        </div>
 
-              
+        <!--Activity index-->
+        <div  class='flexbox-item flexbox-item5'>
+            <label><b><u>Activity factor:</u></b></label>
+            <br>            
+             <button class="activityFactor">1</button>
+             <button class="activityFactor">2</button>
+             <button class="activityFactor">3</button>
+             <button class="activityFactor">4</button>
+            
+            </div>
+
+               
     </div> <!--end of flexContainer-->
 
-    <footer>
-       &copy;ay lamo
-    </footer>
+    <!--footer TODO: functionality-->
+    <footer class="footer">
+        <p>©2021 Bradley Walker, "Hyperion-1"</p>
+        <a href="https://github.com/Hyperion-1 " target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </footer>
 
 </body>
 </html>
